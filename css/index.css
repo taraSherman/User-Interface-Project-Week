@@ -160,6 +160,15 @@ img {
 .menu .menu-expanded {
   display: none;
 }
+.menu .menu-expanded .menu-items {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 85px;
+  color: #FFFFFF;
+}
+.menu .menu-expanded .menu-items a:hover {
+  color: #222222;
+}
 .nav {
   background-color: #828282;
   width: 100%;
