@@ -157,6 +157,9 @@ img {
   margin: 0 auto;
   background-color: #FFFFFF;
 }
+.menu .menu-expanded {
+  display: none;
+}
 .nav {
   background-color: #828282;
   width: 100%;
