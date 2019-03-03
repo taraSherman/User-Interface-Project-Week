@@ -1,12 +1,12 @@
 .menu {
+    display: none;
 
-    .menu-inactive {
-
-    }
-
-    .menu-expanded {
-        display: none;
-        
+    .menu-dropdown {
+        background-color: @footer-background;
+        height: 30%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
 
         .menu-items {
             font-weight: bold;
@@ -19,4 +19,12 @@
             }
         }
     }
+}
+
+.menu--open {
+        display: block;
+    }
+
+.menu--closed {
+    display: none;
 }

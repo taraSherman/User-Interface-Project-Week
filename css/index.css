@@ -157,18 +157,6 @@ img {
   margin: 0 auto;
   background-color: #FFFFFF;
 }
-.menu .menu-expanded {
-  display: none;
-}
-.menu .menu-expanded .menu-items {
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 85px;
-  color: #FFFFFF;
-}
-.menu .menu-expanded .menu-items a:hover {
-  color: #222222;
-}
 .nav {
   background-color: #828282;
   width: 100%;
@@ -181,6 +169,31 @@ img {
   font-weight: bold;
   font-size: 24PX;
   color: #FFFFFF;
+}
+.menu {
+  display: none;
+}
+.menu .menu-dropdown {
+  background-color: #828282;
+  height: 30%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.menu .menu-dropdown .menu-items {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 85px;
+  color: #FFFFFF;
+}
+.menu .menu-dropdown .menu-items a:hover {
+  color: #222222;
+}
+.menu--open {
+  display: block;
+}
+.menu--closed {
+  display: none;
 }
 .home-page .intro {
   position: auto;
