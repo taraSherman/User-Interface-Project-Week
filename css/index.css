@@ -195,14 +195,11 @@ img {
 .menu--closed {
   display: none;
 }
-.home-page .intro {
-  position: auto;
+.intro {
+  position: relative;
+  margin-bottom: 598px;
 }
-.home-page .intro .intro__img {
-  position: absolute;
-  z-index: 0;
-}
-.home-page .intro .intro__jumbotron-header {
+.intro .intro__jumbotron-header {
   position: absolute;
   z-index: 1;
   margin-top: 20%;
@@ -212,10 +209,66 @@ img {
   line-height: 75px;
   color: #FFFFFF;
 }
+.intro .intro__img {
+  position: absolute;
+  z-index: 0;
+}
+.home-page h1,
+.home-page h2 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #222222;
+}
+.home-page h3 {
+  background-color: #D8D8D8;
+  width: 316px;
+  height: 95px;
+}
+.home-page button {
+  width: 137px;
+  height: 47px;
+  border-color: #222222;
+}
+.home-page p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
 .home-page .smith-jones {
-  position: auto;
   display: flex;
   justify-content: space-between;
+}
+.home-page .smith-jones .smith-jones__left-box {
+  width: 49%;
+  margin: 56px 10px 54px 86px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: auto;
+}
+.home-page .smith-jones .smith-jones__right-box {
+  margin: 30px 86px 30px auto;
+  width: 51%;
+}
+.home-page .smith-jones .smith-jones__right-box .smith-jones__right-box_img {
+  width: 410px;
+}
+.home-page .future-designs {
+  display: flex;
+  justify-content: space-between;
+}
+.home-page .future-designs .future-designs__left-box {
+  margin: 30px 10px 30px 86px;
+  width: 41%;
+}
+.home-page .future-designs .future-designs__right-box {
+  width: 41%;
+  margin: 56px 86px 54px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: auto;
+}
+.home-page .recent-projects .recent-projects__h2 {
+  margin: 50px 0 50px 86px;
 }
 @font-face {
   font-family: 'Roboto';

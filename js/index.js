@@ -1,6 +1,7 @@
 
 const menu = document.querySelector('.menu');
 const menuOpen = document.querySelector('.menu-open');
+console.log(menuOpen);
 const hamburger = document.querySelector('.menu-inactive');
 
 
@@ -22,3 +23,4 @@ const showMenu = () => {
 // Using your menuOpen reference, add a click handler that calls toggleMenu
 menuOpen.addEventListener('click', showMenu);
 // hamburger.addEventListener('click', hideMenu);
+

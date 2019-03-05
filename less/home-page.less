@@ -1,38 +1,78 @@
 .home-page {
 
-    .intro {
-        position: auto;
+    h1, h2 {
+        font-weight: bold;
+        font-size: 28px;
+        color: @subheader-color;
+    }
 
-        .intro__img {
-            position: absolute;
-            z-index: 0;
-        }
+    h3 {
+        background-color: @recent-square;
+        width: 316px;
+        height: 95px;
+    }
 
-        .intro__jumbotron-header {
-            position: absolute;
-            z-index: 1;
-            margin-top: 20%;
-            margin-left: 6.3%;
-            font-weight: bold;
-            font-size: 64px;
-            line-height: 75px;
-            color: @jumbotron-header-color;
-        }
+    button {
+        width: 137px;
+        height: 47px;
+        // padding: 20px;
+        border-color: @button-borders;
+    }
+
+    p {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .smith-jones {
-        position: auto;
         display: flex;
         justify-content: space-between;
 
         .smith-jones__left-box {
-
+            width: 49%;
+            margin: 56px 10px 54px 86px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: auto;
         }
 
         .smith-jones__right-box {
+            margin: 30px 86px 30px auto;
+            width: 51%;
 
+            .smith-jones__right-box_img {
+                width: 410px;
+            }
         }
     }
 
+    .future-designs {
+        display: flex;
+        justify-content: space-between;
+
+        .future-designs__left-box {
+            margin: 30px 10px 30px 86px;
+            width: 41%;
+        }
+
+        .future-designs__right-box {
+            width: 41%;
+            margin: 56px 86px 54px 10px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: auto;
+        }
+    }
+
+    .recent-projects {
+        .recent-projects__h2 {
+            margin: 50px 0 50px 86px;
+        }
+    }
+
+    .villas {
+
+    }
 
 }
