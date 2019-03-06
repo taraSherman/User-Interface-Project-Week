@@ -272,9 +272,23 @@ img {
 }
 .home-page .villas {
   position: relative;
+  margin-bottom: 300px;
 }
 .home-page .villas .villas-overlap img {
   width: 852px;
+  margin: 50px 86px 50px 86px;
+  position: absolute;
+  z-index: 0;
+}
+.home-page .villas .villas-overlap .villas__box h3 {
+  position: absolute;
+  z-index: 1;
+  margin: 230px 86px 0 623px;
+  display: flex;
+  justify-content: center;
+}
+.home-page .villas .villas-overlap .villas__p1 {
+  position: relative;
   margin: 50px 86px 50px 86px;
 }
 @font-face {

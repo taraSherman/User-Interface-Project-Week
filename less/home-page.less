@@ -76,16 +76,31 @@
 
     .villas {
         position: relative;
+        margin-bottom: 300px;
 
         .villas-overlap {
-            
+                        
             img {
                 width: 852px;
                 margin: 50px 86px 50px 86px;
+                position: absolute;
+                z-index: 0;
             }
 
-            h3 {
+            .villas__box {
 
+                h3 {
+                    position: absolute;
+                    z-index: 1;
+                    margin: 230px 86px 0 623px;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            .villas__p1 {
+                position: relative;
+                margin: 50px 86px 50px 86px;
             }
         }        
     }
