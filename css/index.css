@@ -192,9 +192,6 @@ img {
 .menu--open {
   display: block;
 }
-.menu--closed {
-  display: none;
-}
 .intro {
   position: relative;
   margin-bottom: 598px;

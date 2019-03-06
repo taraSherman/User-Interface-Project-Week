@@ -19,8 +19,8 @@ const showMenu = () => {
 }
 
 const hideMenu = () => {
-    menuClose.classList.toggle('menu--closed');
-    menuX.classList.toggle('visible');
+    menuClose.classList.toggle('menu--open');
+    hamburger.classList.toggle('visible');
     event.stopPropagation;
 }
 
