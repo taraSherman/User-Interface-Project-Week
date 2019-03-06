@@ -1,15 +1,15 @@
 
-const menuInactive = document.querySelector('menu-inactive');
+const menuInactive = document.querySelector('.menu-inactive');
 console.log(menuInactive);
-const menuOpen = document.querySelector('menu-open');
+const menuOpen = document.querySelector('.menu-open');
 console.log(menuOpen);
-const hamburger = document.querySelector('hamburger');
+const hamburger = document.querySelector('.hamburger');
 console.log(hamburger);
-const menu = document.querySelector('menu');
+const menu = document.querySelector('.menu');
 console.log(menu);
-const menuClose = document.querySelector('menu-close');
+const menuClose = document.querySelector('.menu-close');
 console.log(menuClose);
-const menuX = document.querySelector('menu-x');
+const menuX = document.querySelector('.menu-x');
 console.log(menuX);
 
 const showMenu = () => {
