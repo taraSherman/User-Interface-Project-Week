@@ -1,26 +1,31 @@
 
-const menu = document.querySelector('.menu');
-const menuOpen = document.querySelector('.menu-open');
+const menuInactive = document.querySelector('menu-inactive');
+console.log(menuInactive);
+const menuOpen = document.querySelector('menu-open');
 console.log(menuOpen);
-const hamburger = document.querySelector('.menu-inactive');
-
-
+const hamburger = document.querySelector('hamburger');
+console.log(hamburger);
+const menu = document.querySelector('menu');
+console.log(menu);
+const menuClose = document.querySelector('menu-close');
+console.log(menuClose);
+const menuX = document.querySelector('menu-x');
+console.log(menuX);
 
 const showMenu = () => {
-    // Toggle the "menu--open" class on your menu refence. 
     menuOpen.classList.toggle('menu--open');
     hamburger.classList.toggle('visible');
     event.stopPropagation;
-};
+}
 
-// const hideMenu = () => {
-//     menu.classList.toggle()('menu--closed');
-//     hamburger.classList.toggle('visible');
-//     event.stopPropagation
-// }
+const hideMenu = () => {
+    menuClose.classList.toggle('menu--closed');
+    menuX.classList.toggle('visible');
+    event.stopPropagation;
+}
 
 
 // Using your menuOpen reference, add a click handler that calls toggleMenu
-menuOpen.addEventListener('click', showMenu);
-// hamburger.addEventListener('click', hideMenu);
+hamburger.addEventListener('click', showMenu);
+menuX.addEventListener('click', hideMenu);
 

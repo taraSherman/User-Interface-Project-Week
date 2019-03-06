@@ -223,6 +223,9 @@ img {
   background-color: #D8D8D8;
   width: 316px;
   height: 95px;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: #222222;
 }
 .home-page button {
   width: 137px;
@@ -268,7 +271,14 @@ img {
   padding: auto;
 }
 .home-page .recent-projects .recent-projects__h2 {
-  margin: 50px 0 50px 86px;
+  margin: 50px 0 0 86px;
+}
+.home-page .villas {
+  position: relative;
+}
+.home-page .villas .villas-overlap img {
+  width: 852px;
+  margin: 50px 86px 50px 86px;
 }
 @font-face {
   font-family: 'Roboto';
