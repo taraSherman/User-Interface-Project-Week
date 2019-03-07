@@ -170,6 +170,9 @@ img {
   font-size: 24PX;
   color: #FFFFFF;
 }
+.menu-expanded {
+  display: none;
+}
 .menu {
   display: none;
 }
@@ -268,7 +271,7 @@ img {
   padding: auto;
 }
 .home-page .recent-projects .recent-projects__h2 {
-  margin: 50px 0 0 86px;
+  margin: 50px 0 50px 86px;
 }
 .home-page .villas {
   position: relative;
@@ -276,7 +279,7 @@ img {
 }
 .home-page .villas .villas-overlap img {
   width: 852px;
-  margin: 50px 86px 50px 86px;
+  margin: 0 86px 50px 86px;
   position: absolute;
   z-index: 0;
 }
@@ -288,8 +291,7 @@ img {
   justify-content: center;
 }
 .home-page .villas .villas-overlap .villas__p1 {
-  position: relative;
-  margin: 50px 86px 50px 86px;
+  margin: 250px 86px 50px 86px;
 }
 @font-face {
   font-family: 'Roboto';
