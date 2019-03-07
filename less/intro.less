@@ -1,21 +1,21 @@
 .intro {
-    position: relative;
-    margin-bottom: 598px;
-    // display: none;
-
-    .intro__jumbotron-header {
-            position: absolute;
-            z-index: 1;
-            margin-top: 20%;
-            margin-left: 6.3%;
-            font-weight: bold;
-            font-size: 64px;
-            line-height: 75px;
-            color: @jumbotron-header-color;
-    }
-
-    .intro__img {
-            position: absolute;
-            z-index: 0;
-    }
+        background-image: url(../img/home/home-jumbotron.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        
+        .intro__jumbotron-header {
+                position: absolute;
+                top: 61.5vh;
+                left: 34vh;
+                display: flex;
+                justify-content: flex-start;
+                align-content: flex-end;
+                font-weight: bold;
+                font-size: 64px;
+                line-height: 75px;
+                color: @jumbotron-header-color;
+        }
 }

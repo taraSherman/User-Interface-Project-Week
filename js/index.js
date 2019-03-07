@@ -5,7 +5,7 @@ const menuOpen = document.querySelector('.menu-open');
 console.log(menuOpen);
 const hamburger = document.querySelector('.hamburger');
 console.log(hamburger);
-const menuExpanded = document.querySelector('menu-expanded');
+const menuExpanded = document.querySelector('.menu-expanded');
 console.log(menuExpanded);
 const menu = document.querySelector('.menu');
 console.log(menu);
