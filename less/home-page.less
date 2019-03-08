@@ -28,19 +28,43 @@
         line-height: 24px;
     }
 
+    .intro {
+        background-image: url(../img/home/home-jumbotron.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 100vw;
+        max-height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        
+        .intro__jumbotron-header {
+            // position: absolute;
+            // top: 61.5vh;
+            // left: 34vh;
+            // display: flex;
+            // justify-content: flex-start;
+            // align-content: flex-end;
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 75px;
+            color: @jumbotron-header-color;
+        }
+    }
+
     .smith-jones {
+        max-width: 40.04vw;
+        padding-left: 8.4vw;
+        padding-right: 8.4vw;
         display: flex;
         justify-content: space-between;
-        // padding-top: 5vh;
-        // padding-left: 5vh;
-        // padding-right: 5vh;
         border: 0.1px solid blue;
 
         .smith-jones__left-box {
             width: 51%;
             display: flex;
             flex-wrap: wrap;
-            padding: 5vh;
+            // padding: 5vh;
             border: 0.1px solid green;
         }
 

@@ -1,6 +1,6 @@
 .nav {
     background-color: @footer-background;
-    width: 100%;
+    max-width: 100%;
     height: 19%;
     padding: 1.3%;
     display: flex;
@@ -11,4 +11,39 @@
         font-size: 24PX;
         color: @nav-logo-color;
     }
+
+    .menu-expanded {
+    display: none;
+    }
+
+    .menu {
+    display: none;
+
+    .menu-dropdown {
+        background-color: @footer-background;
+        height: 30%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+        .menu-items {
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 85px;
+            color: @nav-text-color;
+
+            a:hover {
+                color: @nav-text-hover-color;
+            }
+        }
+    }
+}
+
+.menu--open {
+        display: block;
+    }
+
+// .menu--closed {
+//     display: none;
+// }
 }
