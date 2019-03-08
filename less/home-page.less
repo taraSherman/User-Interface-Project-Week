@@ -1,4 +1,5 @@
 .home-page {
+    border: 0.1px solid black;
 
     h1, h2 {
         font-weight: bold;
@@ -18,7 +19,6 @@
     button {
         width: 137px;
         height: 47px;
-        // padding: 20px;
         border-color: @button-borders;
     }
 
@@ -31,9 +31,9 @@
     .smith-jones {
         display: flex;
         justify-content: space-between;
-        padding-top: 5vh;
-        padding-left: 5vh;
-        padding-right: 5vh;
+        // padding-top: 5vh;
+        // padding-left: 5vh;
+        // padding-right: 5vh;
         border: 0.1px solid blue;
 
         .smith-jones__left-box {
@@ -47,11 +47,12 @@
         .smith-jones__right-box {
             // margin: 30px 86px 30px auto;
             width: 49%;
+            margin-right: 2.5vw;
             background-image: url("../img/home/home-img-1.png");
             background-size: cover;
             background-repeat: no-repeat;
-            width: 43.4vh;
-            height: 29.2vh;
+            width: 410px;
+            height: 275px;
             justify-content: flex-end;
             border: 0.1px solid purple;
         }
@@ -66,10 +67,15 @@
         border: 0.1px solid blue;
 
             .future-designs__right-box {
-                width: 51%;
+                width: 49%;
                 display: flex;
                 flex-wrap: wrap;
-                padding: 5vh;
+                padding-top: 5vh;
+                padding-bottom: 5vh;
+                padding-left: 2.5vw;
+                padding-right: 0;
+                margin-right: 0;
+                // padding: 5vh 0 5vh 2.5vw;
                 border: 0.1px solid green;
             }
 
@@ -78,8 +84,8 @@
             background-image: url("../img/home/home-img-2.png");
             background-size: cover;
             background-repeat: no-repeat;
-            width: 43.4vh;
-            height: 29.2vh;
+            width: 410px;
+            height: 275px;
             justify-content: flex-end;
             border: 0.1px solid purple;
         }
@@ -87,38 +93,50 @@
 
     .recent-projects {
         .recent-projects__h2 {
-            margin: 50px 0 50px 86px;
+            margin: 50px 0 25px 86px;
         }
     }
 
     .villas {
-        position: relative;
-        margin-bottom: 300px;
+        // height: 100%;
 
-        .villas-overlap {
-                        
-            img {
-                width: 852px;
-                margin: 0 86px 50px 86px;
-                position: absolute;
-                z-index: 0;
-            }
+        .villas__img {
+            position: relative;
+            background-image: url(../img/home/home-villas-img.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 230px;
+            width: 852px;
+            margin-top: 5%;
+            margin-right: 86px;
+            margin-left: 5%;
+            margin-left: 86px;
+            border: 0.1px solid red;
+            display: flex;
+            justify-content: center;
 
             .villas__box {
+            background-color: @background-color;
+            position: absolute;
+            width: 317px;
+            height: 96px;
+            left: 63%;
+            top: 70%;
 
                 h3 {
-                    position: absolute;
-                    z-index: 1;
-                    margin: 230px 86px 0 623px;
-                    display: flex;
-                    justify-content: center;
+                    padding: 5vh;
+                    text-align: center;
+                    font-size: 2.3rem;
                 }
             }
+        }
 
-            .villas__p1 {
-                margin: 250px 86px 50px 86px;
-            }
-        }        
+        p {
+            width: 50%;
+            text-align: justify;
+            border: 0.1% solid blue;
+        }
     }
 
 }

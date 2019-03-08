@@ -215,6 +215,9 @@ img {
   line-height: 75px;
   color: #FFFFFF;
 }
+.home-page {
+  border: 0.1px solid black;
+}
 .home-page h1,
 .home-page h2 {
   font-weight: bold;
@@ -242,9 +245,6 @@ img {
 .home-page .smith-jones {
   display: flex;
   justify-content: space-between;
-  padding-top: 5vh;
-  padding-left: 5vh;
-  padding-right: 5vh;
   border: 0.1px solid blue;
 }
 .home-page .smith-jones .smith-jones__left-box {
@@ -256,11 +256,12 @@ img {
 }
 .home-page .smith-jones .smith-jones__right-box {
   width: 49%;
+  margin-right: 2.5vw;
   background-image: url("../img/home/home-img-1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 43.4vh;
-  height: 29.2vh;
+  width: 410px;
+  height: 275px;
   justify-content: flex-end;
   border: 0.1px solid purple;
 }
@@ -273,10 +274,14 @@ img {
   border: 0.1px solid blue;
 }
 .home-page .future-designs .future-designs__right-box {
-  width: 51%;
+  width: 49%;
   display: flex;
   flex-wrap: wrap;
-  padding: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 2.5vw;
+  padding-right: 0;
+  margin-right: 0;
   border: 0.1px solid green;
 }
 .home-page .future-designs .future-designs__left-box {
@@ -284,33 +289,47 @@ img {
   background-image: url("../img/home/home-img-2.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 43.4vh;
-  height: 29.2vh;
+  width: 410px;
+  height: 275px;
   justify-content: flex-end;
   border: 0.1px solid purple;
 }
 .home-page .recent-projects .recent-projects__h2 {
-  margin: 50px 0 50px 86px;
+  margin: 50px 0 25px 86px;
 }
-.home-page .villas {
+.home-page .villas .villas__img {
   position: relative;
-  margin-bottom: 300px;
-}
-.home-page .villas .villas-overlap img {
+  background-image: url(../img/home/home-villas-img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 230px;
   width: 852px;
-  margin: 0 86px 50px 86px;
-  position: absolute;
-  z-index: 0;
-}
-.home-page .villas .villas-overlap .villas__box h3 {
-  position: absolute;
-  z-index: 1;
-  margin: 230px 86px 0 623px;
+  margin-top: 5%;
+  margin-right: 86px;
+  margin-left: 5%;
+  margin-left: 86px;
+  border: 0.1px solid red;
   display: flex;
   justify-content: center;
 }
-.home-page .villas .villas-overlap .villas__p1 {
-  margin: 250px 86px 50px 86px;
+.home-page .villas .villas__img .villas__box {
+  background-color: #FFFFFF;
+  position: absolute;
+  width: 317px;
+  height: 96px;
+  left: 63%;
+  top: 70%;
+}
+.home-page .villas .villas__img .villas__box h3 {
+  padding: 5vh;
+  text-align: center;
+  font-size: 2.3rem;
+}
+.home-page .villas p {
+  width: 50%;
+  text-align: justify;
+  border: 0.1% solid blue;
 }
 @font-face {
   font-family: 'Roboto';
