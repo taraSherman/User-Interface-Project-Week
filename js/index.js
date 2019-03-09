@@ -1,14 +1,35 @@
-class NavButton {
-    constructor(element) {
-        this.element = element;
-        this.navItems = document.querySelector(".nav-tags");
-        // console.log(this.navItems)
-        this.element.addEventListener('click', () => this.handleClick());
+// JS goes here
+class TabLink {
+    constructor(tabElement) {
+        this.tabElement = tabElement;
+        this.tabData = this.tabElement.dataset.tab;
+
+        this.cards = document.querySelectorAll(`.toggle[data-tab='${this.tabData}']`)
+
+        this.cards = Array.from(this.cards).map(card => new TabCard(card));
+        this.tabElement.addEventListener(`click`, () => this.selectTab());
     }
-    handleClick() {
-        document.querySelectorAll('.navigation-button').forEach(element => element.classList.toggle('active'));
-        this.navItems.classList.toggle('hidden')
+
+    selectTab() {
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(item => item.classList.remove('active-tab'));
+
+        const cards = document.querySelectorAll('.toggle');
+        cards.forEach(item => (item.style.display = "none"));
+
+        this.tabElement.classList.add('active-tab');
+        this.cards.forEach(card => card.selectCard());
     }
 }
 
-const menuButton = document.querySelectorAll(".navigation-button").forEach(button => new NavButton(button));
+class TabCard {
+    constructor(cardElement) {
+        this.cardElement = cardElement;
+    }
+    selectCard() {
+        this.cardElement.style.display = 'flex';
+    }
+}
+let tabs = document.querySelectorAll(".tab").forEach(tab => new TabLink(tab));
+
+this.cards = document.querySelectorAll(`.about-card[data-tab='${this.tabData}']`);

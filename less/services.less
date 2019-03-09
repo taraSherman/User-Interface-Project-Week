@@ -1,76 +1,80 @@
-// SERVICES-PAGE
-.main-image {
-  .services-image {
-    width: 1425px;
-    max-width: 100%;
-    @media @mobile {
-      height: 45vh;
-    }
-  }
+.services-titlecard{
+    padding: 30px;
+    margin: 5px;
+    font-size: .8rem;
 }
-.services-top-content {
-  margin: 4% 0;
+
+.services-img {
+    margin-left: 25px;
 }
+
+.services .row{
+    margin-top: 0;
+}
+
+.services-h3{
+    margin-top: 20px;
+}
+
 .tabs {
-  .tabs-links {
     display: flex;
-    justify-content: space-between;
-    margin: 2% 0 3% 0;
-    @media @mobile {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-    .tabs-link {
-      border: 2px solid @blackish;
-      padding: 2% 5%;
-      font-size: 1.9rem;
-      text-align: center;
-      cursor: pointer;
-      @media @mobile {
-        padding: 5% 0 5% 0;
-        margin-top: 3%;
-      }
-      &:hover {
-        background-color: @tabs-bc;
-        color: white;
-      }
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5px 0;
+    margin-bottom: 50px;
+    width: 100%;
+    
+    p {
+        padding-top: 12px;
     }
   }
+
+.tabs .tab {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    height: 40px;
+    width: 170px;
+    text-align: center;
+    letter-spacing: 1.1px;
+    border: 1px solid black;
+	cursor: pointer;
+	white-space: nowrap;
 }
-.selected-link {
-  background-color: @tabs-bc;
-  color: white;
+
+.tab:hover {
+    background-color: #5E9FB9;
+    color: white;
 }
-.tabs {
-  .tabs-items {
-    .tabs-item {
-      display: none;
+
+.tabs .active-tab {
+    background-color: #5E9FB9;
+    color: white;
+}
+
+.row + .hidden {
+    display: none;
+}
+
+.header-container{
+    .services-header-txt{
+       top: 80%
     }
-    .selected {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      @media @mobile {
-        display: flex;
-        flex-direction: column;
-      }
-      .tabs-item-content {
-        width: 48%;
-        @media @mobile {
-          width: 100%;
-        }
-        p {
-          text-align: justify;
-          line-height: 1.6;
-        }
-      }
-    }
-  }
 }
-.services-middle-images {
-  margin-top: 6%;
-  @media @mobile {
-    margin-left: 20px;
-  }
+
+.card-text-container{
+    width: 100%;
+    h3 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    p{
+        margin-right: 10px;
+        font-size: .8rem;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
 }

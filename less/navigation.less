@@ -1,49 +1,65 @@
-.nav {
-    background-color: @footer-background;
-    max-width: 100%;
-    height: 19%;
-    padding: 1.3%;
+.nav__container-closed{
     display: flex;
+    width: 100%;
+    font-size: 1.2rem;
+    height: 40px;
+    background-color: #9AA4AE;
+    align-items: center;
     justify-content: space-between;
-
-    .nav__logo {
+    padding: 20px;
+    color: white;
+    .navLogo{
         font-weight: bold;
-        font-size: 24PX;
-        color: @nav-logo-color;
-    }
-
-    .menu-expanded {
-    display: none;
-    }
-
-    .menu {
-    display: none;
-
-    .menu-dropdown {
-        background-color: @footer-background;
-        height: 30%;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-
-        .menu-items {
-            font-weight: bold;
-            font-size: 48px;
-            line-height: 85px;
-            color: @nav-text-color;
-
-            a:hover {
-                color: @nav-text-hover-color;
-            }
-        }
     }
 }
 
-.menu--open {
-        display: block;
-    }
+.nav-icon{
+    width: 30px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.open {
+    background-image: url(/img/nav-hamburger.png);
+}
 
-// .menu--closed {
-//     display: none;
-// }
+.closed {
+    background-image: url(/img/nav-hamburger-close.png);
+}
+
+.nav-open{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0%;
+    z-index: 2;
+    width: 54.5%;
+    height: 100%;
+    background-color: #9AA4AE;
+    opacity: 0.9;
+    margin: 0 auto;
+    @media @tablet {
+        width: 90%;
+    }
+    @media @mobile {
+        width: 100%;
+    }
+    .menu-items {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 100px;
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 50px;
+            text-align: left;
+        }
+        a:hover {
+            color: #222222;
+        }
+    }
 }
