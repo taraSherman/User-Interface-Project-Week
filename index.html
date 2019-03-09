@@ -14,203 +14,153 @@
 <body>
 <!-- Initial commit -->
 	<!-- <h1>You got this!  Good luck.</h1> -->
-<section class="container">
+<body>
 
-	<section class="nav">
-	<!-- Menu Content  -->
-		<section class="nav__logo">
-			<h2>S&J</h2>
-		</section>
-		
-		<!-- inactive menu -->
-		<section class="menu-inactive">
-			<section class="menu-open">
-				<section class="hamburger">
-					<img src="img/nav-hamburger.png" alt="">
-				</section>
+	<section class="main-container">
+		<nav class="navContainerClosed">
+			<section class="navClosed">
+				<p class="navLogo">S&J</p>
 			</section>
-		</section>
+			<section class="navIcon open"></section>
+		</nav>
 
-		<!-- expanded menu -->
-		<section class="menu-expanded">
-			<section class="menu-close">
-				<section class="menu-x">
-					<img src="img/nav-hamburger-close.png" alt="">
-				</section>
-			</section>
-		</section>
-
-		<!-- menu dropdown -->
-		<section class="menu">
-			<section class="menu-dropdown">
+		<nav class="navContainerOpen hidden">
+			<section class="navOpen">
+				<nav class="navContainerClosed">
+					<section class="navClosed">
+						<p class="navLogo">S&J</p>
+					</section>
+					<section class="navIcon closed"></section>
+				</nav>
 				<section class="menu-items">
-					<a href="#" class="nav-link">Home</a>
-					<a href="#" class="nav-link">Services</a>
-					<a href="#" class="nav-link">Contact</a>
+					<a href="/index.html" class="nav-item">Home</a>
+					<a href="/services.html" class="nav-item">Services</a>
+					<a href="#" class="nav-item">Contact</a>
 				</section>
-			</section>	
-		</section>
-	</section>
+			</section>
+		</nav>
 
-	<!-- Home Page Content: -->
-	<section class="home-page">
-		<section class="intro">
-			<section class="intro__jumbotron-header">
+		<header class="header-container">
+			<img src="img/home/home-jumbotron.png" ;>
+			<h1 class="header-txt">
 				Integrity,<br>
 				Excellence,<br>
-				Progress.<br>
+				Progress.
+			</h1>
+		</header>
+
+		<section class="row">
+			<section class="row-content">
+				<section class="text-content">
+					<h3>Smith & Jones Architects</h3>
+					<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse
+						consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
+					<button class="row-btn">Learn More</button>
+				</section>
+				<img src="/img/home/home-img-1.png">
 			</section>
 		</section>
-		
-		<section class="smith-jones">
-		<section class="smith-jones__left-box">
-			<h1 class="smith-jones__left-box__h1">Smith & Jones Architects</h1>
-			<p class="smith-jones__left-box__p">
-				Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem
-			</p>
-			<button class="smith-jones__left-box__btn">
-				Learn More
-			</button>
-		</section>
-		<section class="smith-jones__right-box">
-		</section>
 
-		</section>
-
-		<section class="future-designs">
-		<section class="future-designs__left-box">
-			<img src="img/home/home-img-2.png" alt="artist's rendering of a reflective area between two buildings with a lot of windows" class="future-designs__left-box__img">
-		</section>
-		<section class="future-designs__right-box">
-			<h2 class="future-designs__right-box__h2">Futuristic Designs</h2>
-			<p class="future-designs__right-box__p">
-				Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo	etiam laboramus dissentiet in, nec no errem
-			</p>
-			<button class="future-designs__right-box__btn">
-				View Designs
-			</button>
-		</section>
-		</section>
-
-		<section class="recent-projects">
-		<h2 class="recent-projects__h2">Recent Projects</h2>
-		</section>
-
-		<section class="villas">
-			<section class="villas__img">
-				<section class="villas__box">
-					<h3 class="villas__h3">THE VILLAS</h3>
+		<section class="row">
+			<section class="row-content">
+				<img class="img-left" src="/img/home/home-img-2.png">
+				<section class="text-content">
+					<h3>Futuristic Designs</h3>
+					<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse
+						consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
+					<button class="row-btn">Learn More</button>
 				</section>
 			</section>
-
-			<p class="villas_p1">
-				The Villas bring to the table win-win survival strategies to ensure proactive domination. At the end of the day,
-				going
-				forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud
-				solution.
-			</p>
-			<p class="villas__p2">
-				Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital
-				divide
-				with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the
-				loop on
-				focusing solely on the bottom line.
-			</p>
-		</section>
-		
-
-		<section class="outskirts">
-		<img src="img/home/home-outskirts-img.png" alt="image of modern buildings with water" class="outskirts__img">
-		<h3 class="outskirts__h3">
-			The Outskirts
-		</h3>
-		<p class="outskirts__p1">
-			The Outskirts are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the
-			day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud
-			solution.
-		</p>
-		<p class="outskirts__p2">
-			Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide
-			with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on
-			focusing solely on the bottom line.
-		</p>
 		</section>
 
-		<section class="blocks">
-		<img src="img/home/home-the-blocks-img.png" alt="image of modern buildings with water" class="blocks__img">
-		<h3 class="blocks__h3">
-			The Blocks
-		</h3>
-		<p class="outskirts__p1">
-			The Blocks are amazing to the table win-win survival strategies to ensure proactive domination. At the end of
-			the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a
-			streamlined cloud
-			solution.
-		</p>
-		<p class="outskirts__p2">
-			Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital
-			divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the
-			loop on focusing solely on the bottom line.
-		</p>
+		<section class="column-row">
+			<h2>Recent Projects</h2>
+			<section class="jumbotron-container">
+				<section class="img-txt-bg villas"></section>
+				<section class="img-txt">THE VILLAS</section>
+			</section>
+			<p class="column-row-txt">The Villas bring to the table win-win survival strategies to ensure proactive
+				domination. At the end of the day, going forward, a new normal that has evolved from generation X is on
+				the runway heading towards a streamlined cloud solution. </p>
+			<p class="column-row-txt bottom-text">Capitalize on low hanging fruit to identify a ballpark value added
+				activity to beta test. Override the digital divide with additional clickthroughs from DevOps.
+				Nanotechnology immersion along the information highway will close the loop on focusing solely on the
+				bottom line.</p>
 		</section>
-	</section>
-</section>
 
-<!-- FOOTER CONTENT -->
-	<footer>
-	<section class="footer__email-form">
-		<label for="footer__email-form">
-			Interested in starting a project?<br>
-			Let’s talk:
-		</label>
-		<input type="email" name="" id="footer__email-form" placeholder="Enter email">
-		<p class="footer__email-form__p">
-			We'll never share your email with anyone else.
-		</p>
-	</section>
+		<section class="column-row">
+			<h2>Recent Projects</h2>
+			<section class="jumbotron-container">
+				<section class="img-txt-bg outskirts"></section>
+				<section class="img-txt-right">OUTSKIRTS</section>
+			</section>
+			<p class="column-row-txt">The Villas bring to the table win-win survival strategies to ensure proactive
+				domination. At the end of the day, going forward, a new normal that has evolved from generation X is on
+				the runway heading towards a streamlined cloud solution. </p>
+			<p class="column-row-txt bottom-text">Capitalize on low hanging fruit to identify a ballpark value added
+				activity to beta test. Override the digital divide with additional clickthroughs from DevOps.
+				Nanotechnology immersion along the information highway will close the loop on focusing solely on the
+				bottom line.</p>
+		</section>
 
-	<section class="footer__address-box">
-		<p class="footer__address-box__p1">
-			New York
-		</p>
-		<p class="footer__address-box__p2">
-			123 Lane<br>
-			Suite 100<br>
-			Albany, NY 12345<br>
-			202 555 0144<br>
-		</p>
-	</section>
+		<section class="column-row">
+			<h2>Recent Projects</h2>
+			<section class="jumbotron-container">
+				<section class="img-txt-bg blocks"></section>
+				<section class="img-txt">THE BLOCKS</section>
+			</section>
+			<p class="column-row-txt">The Villas bring to the table win-win survival strategies to ensure proactive
+				domination. At the end of the day, going forward, a new normal that has evolved from generation X is on
+				the runway heading towards a streamlined cloud solution. </p>
+			<p class="column-row-txt bottom-text">Capitalize on low hanging fruit to identify a ballpark value added
+				activity to beta test. Override the digital divide with additional clickthroughs from DevOps.
+				Nanotechnology immersion along the information highway will close the loop on focusing solely on the
+				bottom line.</p>
+		</section>
 
-	<section class="footer__address-box">
-		<p class="footer__address-box__p1">
-			Florida
-		</p>
-		<p class="footer__address-box__p2">
-			Ocean Drive<br>
-			Suite 201<br>
-			Orlando, FL 22345<br>
-			502 555 0144<br>
-		</p>
-	</section>
 
-	<section class="footer__address-box">
-		<p class="footer__address-box__p1">
-			California
-		</p>
-		<p class="footer__address-box__p2">
-			Mountain Street<br>
-			Suite 105<br>
-			San Diego, CA 22345<br>
-			702 555 0144<br>
-		</p>
-	</section>
+		<footer class="footer-container">
+			<form>
+				<p class="footer-header">Interested in starting a project?</p>
+				<p class="footer-header">Let’s talk:</p>
+				<!--make this form require valid email syntax-->
+				<input type="text" name="email"><br>
+				<p class="fineprint">We'll never share your email with anyone else.</p>
+				<!--fineprint class used for small text-->
+			</form>
 
-	<section class="footer__copyright">
-		Copyright © 2018 Smith and Jones
-	</section>
-	</footer>
+			<section class="location-lists">
+				<!--use flexbox and make these evenly spaced columns-->
+				<p class="footer-header">New York</p>
+				<p>123 Lane</p>
+				<p>Suite 100</p>
+				<p>Albany, NY 12345</p>
+				<p>202 555 0144</p>
+			</section>
 
-</section>
-</body>
+			<section class="location-lists">
+				<p class="footer-header">Florida</p>
+				<p>Ocean Drive</p>
+				<p>Suite 201</p>
+				<p>Orlando, FL 22345</p>
+				<p>502 555 0144</p>
+			</section>
+
+			<section class="location-lists">
+				<p class="footer-header">California</p>
+				<p>Mountain Street</p>
+				<p>Suite 105</p>
+				<p>San Diego, CA 22345</p>
+				<p>702 555 0144</p>
+			</section>
+
+			<section class="copyright">
+				<p class="fineprint">Copyright © 2018 Smith and Jones</p>
+			</section>
+		</footer>
+	</section>
 	<script src="js/index.js"></script>
+	<script src="js/nav.js"></script>
+</body>
+
 </html>
